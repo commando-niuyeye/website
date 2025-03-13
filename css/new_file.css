@@ -1,0 +1,362 @@
+body {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.open {
+	position: fixed;
+	color: #ffffff;
+	top: 20px;
+	right: 7px;
+	z-index: 999;
+	font-size: 58px;
+	line-height: 21px;
+	font-weight: 400;
+	font-family: sans-serif;
+	transition: all 0.1s;
+	pointer-events: none;
+}
+
+#lateral {
+	background: rgba(23, 23, 23, 0.9);
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	font-weight: 800;
+	color: rgba(230, 230, 230, 0.6);
+	width: 300px;
+	height: 100%;
+	right: -250px;
+	padding: 58px 0px 0 0;
+	box-sizing: border-box;
+	opacity: 0.4;
+	transition: all 0.3s ease;
+	z-index: 99;
+}
+
+#lateral:hover {
+	right: 0px;
+	opacity: 1;
+}
+
+#lateral a {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	padding: 10px 0;
+	font-weight: 400;
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#lateral a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#lateral strong {
+	font-weight: 800;
+	width: 50px;
+	text-align: center;
+}
+
+section {
+	color: rgba(7, 2, 38, 0.8);
+	padding: 5vh 7vw;
+	overflow: hidden;
+}
+
+section:nth-of-type(even) {
+	background: #4fe4bf;
+}
+
+header {
+	font-size: 3em;
+	font-weight: 600;
+	font-family: "汉仪隶书", "华文隶书", serif;
+	/* 主标题 */
+}
+
+
+code:after {
+	content: "\272D";
+	display: inline-block;
+	transform: rotate(180deg);
+	position: relative;
+	top: -2px;
+	left: 5px
+}
+
+
+
+/* follow me @nodws */
+.btn-twtr {
+	color: #ddd;
+	border: 2px solid;
+	border-radius: 3px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	margin-top: 50px;
+	font-family: sans-serif;
+	font-weight: 600;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+	opacity: 0.8;
+}
+
+.btn-twtr:hover {
+	color: #0af;
+}
+
+.btn-twtr:after {
+	content: "\1F426";
+	padding-left: 5px
+}
+
+
+
+
+
+.about {
+	padding: 80px 0;
+	background-color: var(--dark);
+	color: var(--light);
+}
+
+.about-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	align-items: center;
+}
+
+.about-image {
+	flex: 1;
+	min-width: 300px;
+	height: 400px;
+	position: relative;
+}
+
+.about-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	box-shadow: -15px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+	flex: 1;
+	min-width: 300px;
+}
+
+.about h1 {
+	margin-bottom: 20px;
+	font-family: "华文楷体", "STKaiti", "KaiTi", "楷体", "BiauKai", serif;
+}
+
+.about p {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	font-family: "思源宋体", "Noto Serif SC", "华文宋体", serif;
+}
+
+
+
+
+.hero {
+	padding: 60px 0;
+	background-color: var(--dark);
+	color: var(--light);
+}
+
+.hero-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.hero-content {
+	flex: 1;
+	min-width: 300px;
+}
+
+.hero-image {
+	flex: 1;
+	min-width: 300px;
+	height: 400px;
+	position: relative;
+}
+
+.hero-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+	font-size: 3.5rem;
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+
+.hero p {
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+	font-weight: 300;
+}
+
+.back {
+	margin-left: 650px;
+}
+
+.btn {
+	position: relative;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	padding: 14px 50px;
+	border-radius: 4px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	span {
+		position: relative;
+	}
+
+	&::before {
+		--size: 0;
+		content: '';
+		position: absolute;
+		left: var(--x);
+		top: var(--y);
+		width: var(--size);
+		height: var(--size);
+		background: radial-gradient(circle closest-side, #a3b1f1, transparent);
+		transform: translate(-50%, -50%);
+		transition: all .2s ease, left 0s, top 0s;
+	}
+
+	&:hover::before {
+		--size: 200px;
+	}
+}
+
+/* 新增层级动画 */
+.reveal {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  opacity: 0;
+  transform: translateY(30px) rotateX(10deg) translateZ(-50px);
+  filter: blur(3px);
+  transition: 
+    transform 1.2s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.8s ease,
+    filter 1s ease;
+}
+ 
+.reveal.active  {
+  transform: translateY(0) rotateX(0) translateZ(0);
+  filter: blur(0);
+  opacity: 1;
+}
+ 
+/* 元素分层延迟 */
+.reveal .about-image {
+  transition-delay: 0.3s;
+  transform: translateZ(20px);
+}
+ 
+.reveal .about-content {
+  transition-delay: 0.6s;
+  transform: translateZ(40px);
+}
+
+/* 悬浮放大特效 */
+.about-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+ 
+/* 动态边框光效 */
+.about-container::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, 
+    rgba(255,255,255,0.2) 0%,
+    rgba(200,200,255,0.4) 50%,
+    rgba(255,255,255,0.2) 100%);
+  z-index: -1;
+  animation: borderGlow 3s infinite;
+}
+ 
+@keyframes borderGlow {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.3; }
+}
+/* 玻璃拟态背景 */
+section {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 
+    0 8px 32px rgba(0,0,0,0.1),
+    inset 0 0 12px rgba(255,255,255,0.1);
+}
+ 
+/* 动态粒子背景 */
+body::before {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: 
+    radial-gradient(circle at 80% 20%, 
+      rgba(180,220,255,0.2) 0%, 
+      transparent 50%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 2px,
+      transparent 2px,
+      transparent 4px 
+    );
+  z-index: -1;
+}
+.reveal {
+  transition-duration: calc(0.8s * var(--speed-mod, 1));
+}
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg ...>'), auto;
+}
+ 
+.about-image:hover {
+  mix-blend-mode: luminosity;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%,
+    calc(50% - 10px) calc(100% + 5px),
+    50% 100%,
+    calc(50% + 10px) calc(100% + 5px));
+}
